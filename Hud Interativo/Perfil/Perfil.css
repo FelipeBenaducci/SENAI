@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+/*=============== Barra superior =================*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--body-color);
+  transition: var(--tran-02);
+}
+
+.topbar {
+  width: 97.8%;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.title {
+  font-size: 24px;
+  color: var(--title-color);
+  font-weight: bold;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.logo-sesi {
+  height: 40px;
+  margin-right: 24px;
+  background: var(--primary-color);
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.topbar-right {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.topbar-right .bx-bell,
+.topbar-right .bx-user-circle {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--toggle-color);
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+.profile-main {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.profile-header {
+  background: var(--primary-color-light);
+  border-radius: 4px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.profile-avatar {
+  width: 90px;
+  height: 90px;
+  background: var(--toggle-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: #757575;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+h4 {
+  display: flex;
+  font-size: 16px;
+  font-style: italic;
+  color: var(--text-color);
+}
+
+dialog p {
+  padding: 18px;
+  font-size: 16px;
+  margin-top: 3px;
+  color: var(--text-color);
+}
+dialog h2 {
+  padding: 18px;
+  font-size: 16px;
+  margin-top: 3px;
+  color: var(--title-color);
+}
+
+p {
+  font-size: 16px;
+  margin-top: 3px;
+  color: var(--text-color);
+}
+
+h2 {
+  color: var(--title-color);
+  margin: 0;
+  font-size: 18px;
+}
+
+.profile-info h1 {
+  margin: 0 0 8px 0;
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.msg {
+  font-size: 1rem;
+  color: var(--text-color);
+  margin-left: 8px;
+  vertical-align: middle;
+}
+
+.breadcrumb {
+  font-size: 0.95rem;
+  color: var(--title-color);
+}
+
+.breadcrumb a {
+  color: var(--button-color);
+  text-decoration: none;
+}
+
+.profile-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-actions button {
+  background: var(--primary-color-light);
+  border: 1px solid var(--button-color);
+  color: var(--button-color);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.profile-actions button:hover {
+  background: var(--toggle-color);
+}
+
+.profile-content {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.profile-col {
+  flex: 1 1 320px;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.dialog-content {
+  padding: 12px;
+  flex: 1 1 320px;
+  min-width: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-birth {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--primary-color-light);
+}
+
+.access-btn {
+  background: var(--primary-color);
+  color: #f6f5ff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.profile-box {
+  background: var(--primary-color-light);
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: var(--tran-02);
+}
+
+.daltonismo-btn {
+  background: var(--acessibility-color);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  margin-top: 5%;
+  cursor: pointer;
+}
+.profile-dialog {
+  display: flex;
+  background: var(--primary-color-light);
+  border-radius: 4px;
+  padding: 20px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  transition: var(--tran-02);
+}
+
+#box {
+  margin-top: 0;
+  height: 305px;
+}
+
+.profile-box h3 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  transition: var(--tran-02);
+}
+
+.edit-profile {
+  display: block;
+  margin-top: 8px;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .profile-content {
+    flex-direction: column;
+  }
+}
+
+.footer {
+  background: var(--primary-color-light);
+  padding: 16px;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 0.9rem;
+}
+
+:root {
+  /* ======== cores ========*/
+  --acessibility-color: #1976d2;
+  --button-color: #3949ab;
+  --body-color: #e5e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #f91f1f;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+  --title-color: #18191a;
+
+  /*======== transições ========*/
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+/*========= dark mode ========*/
+.darkmode-btn {
+  background: none;
+  border: none;
+  color: var(--toggle-color);
+  font-size: 1.7rem;
+  margin-left: 12px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+body.dark .darkmode-btn {
+  color: var(--toggle-color);
+}
+
+body.dark {
+  --button-color: #ff5050;
+  --body-color: #18191a;
+  --sidebar-color: #242526;
+  --primary-color: #f91f1f;
+  --primary-color-light: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+  --title-color: #d4d8dd;
+}
+body.dark .menu-bar .menu input {
+  color: var(--text-color);
+}
+
+/* Color blind mode */
+body.daltonismo {
+  --acessibility-color: #857145;
+  --button-color: #7c6a57;
+  --body-color: #e5e9f7;
+  --sidebar-color: #fff;
+  --primary-color: #f91f1f;
+  --primary-color-light: #f6f5ff;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+  --title-color: #18191a;
+}
+
+/*================ acessibilidade =================*/
+body.contraste-alto {
+  background: #000 !important;
+  color: #fff !important;
+}
+body.contraste-alto .profile-box,
+body.contraste-alto .acessibility-box,
+body.contraste-alto .topbar {
+  background: #222 !important;
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+body.contraste-baixo {
+  background: #fff !important;
+  color: #222 !important;
+}
+body.contraste-baixo .profile-box,
+body.contraste-baixo .acessibility-box,
+body.contraste-baixo .topbar {
+  background: #f7f7f7 !important;
+  color: #222 !important;
+  border-color: #222 !important;
+}
+
+/* ============== Acessibilidade ================== */
+dialog::backdrop {
+  background-color: var(--shadow);
+}
+
+dialog {
+  transition: ease-in 0.3s;
+  background-color: var(--sidebar-color);
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px var(--text-color);
+  padding: 0px;
+  width: 20%;
+  margin-right: 25px;
+}
+
+.close-btn-up {
+  background: none;
+  border: none;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+header {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background: var(--acessibility-color);
+}
+
+.acessibilidade-btn {
+  position: fixed;
+  bottom: 50%;
+  right: 36px;
+  z-index: 1000;
+  background: var(--acessibility-color);
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  transition: background 0.2s;
+}
+.acessibilidade-btn:hover {
+  background: #125ea2;
+}
+
+/* coisa */
+
+.daltonismo .profile-box,
+.daltonismo .profile-header,
+.daltonismo .profile-col,
+.daltonismo .container,
+.daltonismo .card,
+.daltonismo .sidebar,
+.daltonismo .topbar,
+.daltonismo .footer {
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.daltonismo a,
+.daltonismo button,
+.daltonismo .acessibilidade-btn,
+.daltonismo .daltonismo-btn {
+  background-color: var(--acessibility-color) !important;
+  color: #fff !important;
+}
+
+.daltonismo .acessibilidade-btn,
+.daltonismo .daltonismo-btn {
+  border: 2px solid var(--secondary-color) !important;
+}

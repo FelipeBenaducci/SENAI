@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="icon" href="/imagens/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/Register/styles.css" />
+  <title>Registrar</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Cadastrar</h1>
+
+      <div id="msgError"></div>
+      <div id="msgSuccess"></div>
+
+      <div class="labelNome">
+        <label id="labelNome" for="nome"> </label>
+        <input type="text" id="nome" placeholder="Nome completo" required />
+      </div>
+
+      <div class="labelUsuario">
+        <label id="labelUsuario" for="usuario"> </label>
+        <input type="text" id="usuario" placeholder="Email" required />
+      </div>
+
+      <div class="labelSenha" style="position: relative;">
+        <label id="labelSenha" for="senha"></label>
+        <input type="password" id="senha" placeholder="Senha" required />
+        <span id="verSenha" class="eye">👁️</span>
+      </div>
+
+      <div class="confirmSenha" style="position: relative;">
+        <label id="labelConfirmSenha" for="confirmSenha"></label>
+        <input type="password" id="confirmSenha" placeholder="Confirmar senha" required />
+        <span id="verConfirmSenha" class="eye2">👁️</span>
+      </div>
+      <div class="remember-forgot">
+        <a href="/Login/Index.html">Voltar à pagina anterior</a>
+      </div>
+
+      <div>
+        <button class="login" onclick="cadastrar()">Criar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/Register/Js.js"></script>
+</body>
+
+</html>
